@@ -1,0 +1,9 @@
+FROM: ubuntu:14.04
+
+RUN apt-get update && apt-get install -y dotnetcore
+
+ADD ~/aspnetcoreapp .
+
+RUN cd ~/aspnetcoreapp \
+    && dotnet restore \
+    && dotnet run 
