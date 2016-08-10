@@ -6,4 +6,4 @@ ADD ~/aspnetcoreapp .
 
 RUN cd ~/aspnetcoreapp \
     && dotnet restore \
-    && dotnet run 
+    && dotnet run
